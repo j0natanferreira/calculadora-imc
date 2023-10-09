@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>IMC</title>
+</head>
+<body>
+    <span class="vazio"></span>
+    <main class="main">
+        <h1>Calculadora IMC</h1>
+        <section class="form">
+            <label for="">Altura (CM)</label>
+            <input type="number" min="100" max="250" placeholder="0" class="altura">
+            <label for="">Peso (KG)</label>
+            <input type="number" min="0" max="250" placeholder="0" class="peso">
+            <button onclick="acao()">ENVIAR</button>
+            <br>
+            <h3 class="resultado">IMC: 0.00</h3>
+        </section>
+    </main>
+    <br>
+    <table>
+        <thead class="table">
+            <tr>
+                <th>VALOR DO IMC</th>
+                <th>CLASSIFICAÇÃO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="baixoPeso">
+                <td>Menor que 18</td>
+                <td>Baixo Peso</td>
+            </tr>
+            <tr class="normal">
+                <td>De 18,5 a 24,99</td>
+                <td>Normal</td>
+            </tr>
+            <tr class="sobrepeso">
+                <td>De 25 a 29,99</td>
+                <td>Sobrepeso</td>
+            </tr>
+            <tr class="obesidade">
+                <td>Maior 30</td>
+                <td>Obesidade</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
